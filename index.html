@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ingesta - Datos que cobran vida</title>
+    <link rel="icon" type="image/vnd.icon" href="./images/favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <h1 class="logo">Ingesta</h1>
+        <ul class="nav-menu">
+          <li><a href="#estructura">Estructura</a></li>
+          <li><a href="#integracion">Integración</a></li>
+          <li><a href="#precios">Precio</a></li>
+          <li><a href="#flujo">Flujo</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button id="dark-mode-toggle" class="dark-mode-btn">🌙</button>
+          <a
+            href="https://dev-ingesta.imentor.ai/login"
+            target="_blank"
+            class="login-btn"
+            >Iniciar sesión</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sección 1: Hero -->
+    <section id="inicio" class="hero-section">
+      <!-- <div class="hero-bg"></div> -->
+      <video autoplay loop muted class="hero-video">
+        <source src="./images/hero.mp4" type="video/mp4" />
+        Tu navegador no soporta video HTML5.
+      </video>
+      <div class="hero-content">
+        <h2>Ingesta: Datos que cobran vida</h2>
+        <p>
+          Un motor avanzado que transforma documentos complejos en información
+          lista para LLM con precisión y estilo.
+        </p>
+        <a href="#estructura" class="cta-btn">Descubre más</a>
+      </div>
+    </section>
+
+    <!-- Sección 2: Estructura -->
+    <section id="estructura" class="section parallax-section">
+      <div class="section-container">
+        <div class="section-text">
+          <h3>Estructura Inteligente</h3>
+          <p>Procesa documentos con una precisión que redefine lo posible.</p>
+          <div class="accordion">
+            <div class="accordion-item">
+              <h4 class="accordion-title">Diseño Flexible</h4>
+              <div class="accordion-content">
+                <p>Extrae datos de gráficos y tablas como un experto humano.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-title">Sector Universal</h4>
+              <div class="accordion-content">
+                <p>Funciona en finanzas, salud, legal y más sin esfuerzo.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-title">Validación Automática</h4>
+              <div class="accordion-content">
+                <p>Verifica facturas y automatiza procesos al instante.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="section-visual">
+          <div class="visual-estructura"></div>
+        </div> -->
+        <div
+          class="column image-column"
+          data-aos="fade-left"
+          style="background-color: #fafafa; border-radius: 20px"
+        >
+          <div
+            class="placeholder-image floating"
+            style="background-color: #fafafa; border-radius: 20px"
+          >
+            <img
+              src="https://static.wixstatic.com/media/9617e5_8be584594d3d4bca82f3383581b9a51a~mv2.gif"
+              alt="Ingesta-estructura"
+              style="
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                object-position: 50% 50%;
+                border-radius: 20px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+                animation: floatLoop 5s ease-in-out infinite;
+                transition: transform 0.3s ease;
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección 3: Integración -->
+    <section id="integracion" class="section integration-section">
+      <div class="section-container reverse">
+        <div class="section-text">
+          <h3>Integración Sin Fricciones</h3>
+          <p>Conecta en minutos con seguridad de nivel empresarial.</p>
+          <div class="cards">
+            <div class="card" data-reveal>
+              <h4>Implementación Rápida</h4>
+              <p>API en la nube con documentación clara y sencilla.</p>
+            </div>
+            <div class="card" data-reveal>
+              <h4>Seguridad Elite</h4>
+              <p>Cumple SOC 2 y HIPAA con total confianza.</p>
+            </div>
+            <div class="card" data-reveal>
+              <h4>Privacidad Absoluta</h4>
+              <p>Retención cero de datos, eliminación garantizada.</p>
+            </div>
+          </div>
+        </div>
+        <div class="section-visual">
+          <div class="visual-integracion"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección 4: Precios -->
+    <section id="precios" class="pricing-section">
+      <div class="pricing-background"></div>
+      <div class="pricing-content">
+        <div class="section-text">
+          <h3>Elige tu plan</h3>
+        </div>
+        <div class="pricing-container">
+          <div class="pricing-card" data-reveal>
+            <div class="card-content">
+              <h4>Pro</h4>
+              <p>Perfecto para producción escalable.</p>
+              <span class="price"
+                >$25 <small class="per-month">USD/mes</small></span
+              >
+              <ul>
+                <li>✔ Opción 1</li>
+                <li>✔ Opción 2</li>
+                <li>✔ Opción 3</li>
+                <li>✔ Opción 4</li>
+                <li>✔ Opción 5</li>
+              </ul>
+            </div>
+            <button class="cta-btn">Comprar</button>
+          </div>
+          <div class="pricing-card" data-reveal>
+            <div class="card-content">
+              <h4>Enterprise</h4>
+              <p>Para cargas de trabajo masivas.</p>
+              <span class="price"
+                >$50 <small class="per-month">USD/mes</small></span
+              >
+              <ul>
+                <li>✔ Opción 1</li>
+                <li>✔ Opción 2</li>
+                <li>✔ Opción 3</li>
+                <li>✔ Opción 4</li>
+                <li>✔ Opción 5</li>
+              </ul>
+            </div>
+            <button class="cta-btn">Comprar</button>
+          </div>
+          <div class="pricing-card" data-reveal>
+            <div class="card-content">
+              <h4>Personalizado</h4>
+              <p>Soluciones a tu medida.</p>
+              <span class="price">Contáctanos</span>
+              <ul>
+                <li>✔ Opción 1</li>
+                <li>✔ Opción 2</li>
+                <li>✔ Opción 3</li>
+                <li>✔ Opción 4</li>
+                <li>✔ Opción 5</li>
+              </ul>
+            </div>
+            <button class="cta-btn">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección 5: Flujo -->
+    <section id="flujo" class="section parallax-section">
+      <div class="section-container">
+        <div class="section-text">
+          <h3>Flujos Personalizados</h3>
+          <p>Crea pipelines RAG que se adaptan a ti.</p>
+          <div class="flow-cards">
+            <div class="flow-card">
+              <h4>Esquemas Adaptables</h4>
+              <p>Extracción precisa con mapeo avanzado.</p>
+            </div>
+            <div class="flow-card">
+              <h4>Procesamiento Flexible</h4>
+              <p>Gestiona datos automáticamente con facilidad.</p>
+            </div>
+            <div class="flow-card">
+              <h4>Optimización Total</h4>
+              <p>Conecta Drive, S3 y más en segundos.</p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="section-visual">
+          <div class="visual-flujo"></div>
+        </div> -->
+        <div
+          class="column image-column"
+          data-aos="fade-left"
+          style="background-color: #fafafa"
+        >
+          <div
+            class="placeholder-image floating"
+            style="background-color: #fafafa"
+          >
+            <img
+              src="https://static.wixstatic.com/media/9617e5_d8b179c060f94c9c9eae3294dc683fb8~mv2.gif"
+              alt="Ingesta-llm"
+              style="
+                width: 465px;
+                height: 277px;
+                object-fit: cover;
+                object-position: 50% 50%;
+                border-radius: 20px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+                animation: floatLoop 5s ease-in-out infinite;
+                transition: transform 0.3s ease;
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h1 class="logo">Ingesta</h1>
+          <p>Transformando datos en resultados</p>
+        </div>
+        <div class="footer-center">
+          <h4>Enlaces</h4>
+          <ul>
+            <li><a href="#estructura">Estructura</a></li>
+            <li><a href="#integracion">Integración</a></li>
+            <li><a href="#precios">Precio</a></li>
+            <li><a href="#flujo">Flujo</a></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <h4>Contacto</h4>
+          <p>✉ info@ingesta.com</p>
+          <p>📞 +57 3003000000</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Ohla.ai. Todos los derechos reservados.</p>
+        <div class="footer-links">
+          <a href="https://www.ohla.ai/general-8"
+            >Política de Privacidad y Términos de Servicio</a
+          >
+          <a href="#">Cookies</a>
+        </div>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/vansalatam/" target="_blank">📷</a>
+          <a href="https://co.linkedin.com/company/vansalatam" target="_blank"
+            >💼</a
+          >
+          <a href="http://www.youtube.com/@vansafuturo" target="_blank">▶</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
