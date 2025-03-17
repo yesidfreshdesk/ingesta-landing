@@ -940,6 +940,7 @@ body.dark-mode .social-icons a {
     z-index: -10;
     align-items: center;
     border-radius: 0 0 20px 20px;
+    margin-left: 0;
   }
 
   body.dark-mode .nav-menu {
