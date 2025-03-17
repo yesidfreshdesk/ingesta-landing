@@ -42,7 +42,6 @@ body.dark-mode .hamburger {
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
-  /* background: rgba(255, 246, 255, 0.95); */
   background: #fafafa;
   backdrop-filter: blur(10px);
   padding: 15px 30px;
@@ -943,6 +942,10 @@ body.dark-mode .social-icons a {
     margin-left: 0;
   }
 
+  .nav-menu li {
+    margin-right: 0;
+  }
+
   body.dark-mode .nav-menu {
     background: rgba(26, 26, 26, 0.9);
   }
@@ -951,8 +954,14 @@ body.dark-mode .social-icons a {
     display: flex; /* Visible cuando se activa */
   }
 
+  .nav-items {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+  }
+
   .nav-items li {
-    margin: 15px 0;
+    /* margin: 15px 0; */
     text-align: center;
   }
 
