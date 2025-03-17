@@ -20,14 +20,30 @@ body.dark-mode {
   color: #fafafa; /* Texto claro */
 }
 
+/* Estilos para el botón hamburguesa */
+.hamburger {
+  display: none; /* Oculto por defecto en escritorio */
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #35027b;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .hamburger {
+  color: #fafafa;
+}
+
 /* Navbar */
 .navbar {
   position: fixed;
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 80%;
-  background: rgba(255, 246, 255, 0.95);
+  width: 90%;
+  /* background: rgba(255, 246, 255, 0.95); */
+  background: #fafafa;
   backdrop-filter: blur(10px);
   padding: 15px 30px;
   border-radius: 50px;
@@ -49,9 +65,28 @@ body.dark-mode .navbar {
 }
 
 .logo {
-  font-family: "Poppins", sans-serif;
-  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
   color: #35027b;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+  background-color: #35027b;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 body.dark-mode .logo {
@@ -60,7 +95,21 @@ body.dark-mode .logo {
 
 .nav-menu {
   display: flex;
+  flex-direction: row;
   list-style: none;
+  position: relative;
+  flex: 1;
+  margin-left: 20px;
+}
+
+.nav-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .nav-menu li {
@@ -108,7 +157,7 @@ body.dark-mode .nav-menu a.active {
 .login-btn {
   background: #35027b;
   color: #fafafa;
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 20px;
   text-decoration: none;
   font-weight: 600;
@@ -194,10 +243,6 @@ body.dark-mode .cta-btn {
   max-width: 1200px;
   margin: 0 auto;
   gap: 50px;
-}
-
-.section-container.reverse {
-  flex-direction: row-reverse;
 }
 
 .section-text {
@@ -855,5 +900,109 @@ body.dark-mode .social-icons a {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (min-width: 480px) {
+  .navbar {
+    width: 80%;
+  }
+}
+
+/* Estilo del login en móviles */
+.mobile-login {
+  display: none; /* Oculto por defecto, visible solo en submenú móvil */
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+  .navbar {
+    border-radius: 20px;
+  }
+
+  .hamburger {
+    display: block; /* Visible en móviles */
+  }
+
+  .nav-actions .desktop-login {
+    display: none; /* Ocultar "Iniciar sesión" en móviles */
+  }
+
+  .nav-menu {
+    display: none; /* Oculto por defecto en móviles */
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Ajusta según la altura de tu navbar */
+    left: 0;
+    background: #fafafa;
+    padding: 20px;
+    z-index: -10;
+    align-items: center;
+    border-radius: 0 0 20px 20px;
+  }
+
+  body.dark-mode .nav-menu {
+    background: rgba(26, 26, 26, 0.9);
+  }
+
+  .nav-menu.active {
+    display: flex; /* Visible cuando se activa */
+  }
+
+  .nav-items li {
+    margin: 15px 0;
+    text-align: center;
+  }
+
+  .nav-items a {
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+  }
+
+  .nav-items a.active::after {
+    bottom: -5px;
+  }
+
+  .mobile-login {
+    display: block; /* Visible en el submenú móvil */
+    background: #35027b;
+    color: #fafafa !important;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background 0.3s;
+  }
+
+  body.dark-mode .mobile-login {
+    background: #8d0003;
+  }
+
+  .mobile-login:hover {
+    background: #8d0003;
+  }
+
+  .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mobile-login {
+    display: none; /* Oculto en escritorio */
+  }
+
+  .nav-actions .desktop-login {
+    display: block; /* Visible en escritorio */
   }
 }

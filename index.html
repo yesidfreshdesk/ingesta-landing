@@ -15,28 +15,39 @@
     <!-- Navbar -->
     <nav class="navbar">
       <div class="nav-container">
-        <h1 class="logo">Ingesta</h1>
-        <ul class="nav-menu">
-          <li><a href="#estructura">Estructura</a></li>
-          <li><a href="#integracion">Integración</a></li>
-          <li><a href="#precios">Precio</a></li>
-          <li><a href="#flujo">Flujo</a></li>
-        </ul>
+        <!-- <h1 class="logo">Ingesta</h1> -->
+        <a href="#inicio" class="logo">
+          <div class="logo-img">I</div>
+          <h1 class="logo-text">Ingesta</h1>
+        </a>
+        <div class="nav-menu">
+          <ul class="nav-items">
+            <li><a href="#estructura">Estructura</a></li>
+            <li><a href="#integracion">Integración</a></li>
+            <li><a href="#precios">Precio</a></li>
+            <li><a href="#flujo">Flujo</a></li>
+          </ul>
+          <a
+            href="https://dev-ingesta.imentor.ai/login"
+            target="_blank"
+            class="login-btn mobile-login"
+            >Iniciar sesión</a
+          >
+        </div>
         <div class="nav-actions">
           <button id="dark-mode-toggle" class="dark-mode-btn">🌙</button>
           <a
             href="https://dev-ingesta.imentor.ai/login"
             target="_blank"
-            class="login-btn"
+            class="login-btn desktop-login"
             >Iniciar sesión</a
           >
         </div>
+        <button class="hamburger" aria-label="Toggle menu">☰</button>
       </div>
     </nav>
-
     <!-- Sección 1: Hero -->
     <section id="inicio" class="hero-section">
-      <!-- <div class="hero-bg"></div> -->
       <video autoplay loop muted class="hero-video">
         <source src="./images/hero.mp4" type="video/mp4" />
         Tu navegador no soporta video HTML5.
@@ -78,9 +89,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="section-visual">
-          <div class="visual-estructura"></div>
-        </div> -->
         <div
           class="column image-column"
           data-aos="fade-left"
@@ -111,7 +119,10 @@
 
     <!-- Sección 3: Integración -->
     <section id="integracion" class="section integration-section">
-      <div class="section-container reverse">
+      <div class="section-container">
+        <div class="section-visual">
+          <div class="visual-integracion"></div>
+        </div>
         <div class="section-text">
           <h3>Integración Sin Fricciones</h3>
           <p>Conecta en minutos con seguridad de nivel empresarial.</p>
@@ -129,9 +140,6 @@
               <p>Retención cero de datos, eliminación garantizada.</p>
             </div>
           </div>
-        </div>
-        <div class="section-visual">
-          <div class="visual-integracion"></div>
         </div>
       </div>
     </section>
@@ -218,14 +226,7 @@
             </div>
           </div>
         </div>
-        <!-- <div class="section-visual">
-          <div class="visual-flujo"></div>
-        </div> -->
-        <div
-          class="column image-column"
-          data-aos="fade-left"
-          style="background-color: #fafafa"
-        >
+        <div style="background-color: #fafafa">
           <div
             class="placeholder-image floating"
             style="background-color: #fafafa"
@@ -234,7 +235,7 @@
               src="https://static.wixstatic.com/media/9617e5_d8b179c060f94c9c9eae3294dc683fb8~mv2.gif"
               alt="Ingesta-llm"
               style="
-                width: 465px;
+                width: 100%;
                 height: 277px;
                 object-fit: cover;
                 object-position: 50% 50%;
